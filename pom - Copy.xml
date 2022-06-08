@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.13.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.mingsoft</groupId>
+    <artifactId>ms-mcms</artifactId>
+    <version>5.2.3</version>
+    <name>ms-mcms</name>
+    <!-- 打包war包 -->
+    <!--    <packaging>war</packaging>-->
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <repositories>
+        <repository>
+            <id>central-repos</id>
+            <name>Central Repository 2</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+
+        <!--阿里云仓库-->
+        <!--
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        -->
+    <repository><id>nexus-repority08823b9a5a35453fb751a3f35a3f0bb0</id><url>https://mirrors.tuna.tsinghua.edu.cn/</url></repository><repository><id>nexus-reporityaf6f257726c44af2bf2e074e5feb7815</id><url>https://repo.maven.apache.org/maven2/</url></repository><repository><id>nexus-reporityeb5b76b8ae924d50b998288d6f78aa78</id><url>https://repo1.maven.org/maven2/</url></repository><repository><id>nexus-reporitydbe6bcec3be84f1284c93ba2b871a1ad</id><url>https://repository.apache.org/snapshots/</url></repository><repository><id>nexus-reporityacdcaedb46f644f987bb1a028d31b327</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/releases</url></repository><repository><id>nexus-reporityc66beccc3f564203b99647e928b290e5</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/snapshots</url></repository><repository><id>nexus-repority2e6dc953932d471e8313448243f687bb</id><url>http://4thline.org/m2</url></repository><repository><id>nexus-reporityc45358a7e1fb4d9698ba88afa9ad0e8f</id><url>https://oss.sonatype.org/content/repositories/google-snapshots/</url></repository><repository><id>nexus-repority68b8eca3f6224ad4880ab90501992a60</id><url>https://repo.clojars.org/</url></repository><repository><id>nexus-repority619dd595a09149938e3bead92e25615e</id><url>https://mirrors.tuna.tsinghua.edu.cn/</url></repository><repository><id>nexus-reporityd921111c2b2149459b9b0d5938bce994</id><url>https://repo.maven.apache.org/maven2/</url></repository><repository><id>nexus-repority0da51db09e2c40858f4a99384c43c4f7</id><url>https://repo1.maven.org/maven2/</url></repository><repository><id>nexus-reporityd87e203284094e95817056aca1964894</id><url>https://repository.apache.org/snapshots/</url></repository><repository><id>nexus-reporityc618e49e9e994bddaeb82da73f7c4d19</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/releases</url></repository><repository><id>nexus-reporitye23cb49188934f738ab4b4ddaf43a447</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/snapshots</url></repository><repository><id>nexus-repority0964bc89b10441abbee8e4e6fe024805</id><url>http://4thline.org/m2</url></repository><repository><id>nexus-repority79345786b87f4b8d920e7da45243a1ce</id><url>https://oss.sonatype.org/content/repositories/google-snapshots/</url></repository><repository><id>nexus-reporityac3b0f01a19740b99dd3aa3997d79d2a</id><url>https://repo.clojars.org/</url></repository><repository><id>nexus-reporitybb1945fdbcc845f5be566ce647a688d5</id><url>https://mirrors.tuna.tsinghua.edu.cn/</url></repository><repository><id>nexus-repority33cc1b88cf30409f923cb97f092457c1</id><url>https://repo.maven.apache.org/maven2/</url></repository><repository><id>nexus-repority388240f28cf041c7b07e887081df0682</id><url>https://repo1.maven.org/maven2/</url></repository><repository><id>nexus-reporitydc5d81f2ba7e4e32b5650da1b3348e2d</id><url>https://repository.apache.org/snapshots/</url></repository><repository><id>nexus-reporityebf4fa5b0f014c279c5a97fbe224a3c1</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/releases</url></repository><repository><id>nexus-reporityf70c4c7c77e3442f90dfa67b13ca2850</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/snapshots</url></repository><repository><id>nexus-repority4f5a44bede1044e398c254534ebb253d</id><url>http://4thline.org/m2</url></repository><repository><id>nexus-repority2b4bb83f69b6448f92d32185cf25fda7</id><url>https://oss.sonatype.org/content/repositories/google-snapshots/</url></repository><repository><id>nexus-repority0db12c8b757a4753b3da3af31b53ee14</id><url>https://repo.clojars.org/</url></repository><repository><id>nexus-reporitye5a6163077844a529d732b3dc00b3db7</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/groups/public/</url></repository><repository><id>nexus-repority8ccdb40cc6b943c4a24595f5c2d0eddf</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/snapshots/</url></repository><repository><id>nexus-repority1e039485dc6f4004a41ffdbf26ab92b3</id><url>http://mvn-rep.hf.seczone.cn/nexus/content/repositories/releases/</url></repository><repository><id>nexus-repority0779e59bbcbb47c1bd586fa78685c364</id><url>https://repo1.maven.org/maven2/</url></repository><repository><id>nexus-repority1ded939696b74c7da590ae8653b59e4b</id><url>https://repo.maven.apache.org/maven2/</url></repository><repository><id>nexus-repority443cef271ad242dc83b0bb599cb4be87</id><url>https://maven.aliyun.com/repository/public/</url></repository></repositories>
+    <dependencies>
+        <dependency>
+            <groupId>net.mingsoft</groupId>
+            <artifactId>ms-base</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+        <!--base源码-->
+        <!--basic源码-->
+
+    </dependencies>
+
+    <build>
+        <finalName>ms-mcms</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/webapp</directory>
+                <excludes>
+                    <!-- 打包生产并手动将static、html、upload、template复制到生产 -->
+                    <exclude>static/</exclude>
+                    <exclude>html/</exclude>
+                    <exclude>upload/</exclude>
+                    <exclude>template/</exclude>
+                    <!-- 如果生产需要实时修改WEB-INF/下的页面可，启用这行并手动将项目中的WEB-INF目录复制到运行环境 -->
+                    <!-- <exclude>WEB-INF/</exclude>-->
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                    <compilerArguments>
+                        <verbose/>
+                        <bootclasspath>${java.home}/lib/rt.jar${path.separator}${java.home}/lib/jce.jar</bootclasspath>
+                    </compilerArguments>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.plexus</groupId>
+                        <artifactId>plexus-compiler-eclipse</artifactId>
+                        <version>2.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+        <defaultGoal>compile</defaultGoal>
+    </build>
+</project>
